@@ -1,10 +1,10 @@
-# 🩺 COVID-19 Pasientləri Üzrə Kliniki Risk Analizi: Pnevmoniya və Yüksək Yaşın Ölüm Sıçrayışındakı Rolu
+#  COVID-19 Pasientləri Üzrə Kliniki Risk Analizi: Pnevmoniya və Yüksək Yaşın Ölüm Sıçrayışındakı Rolu
 
 Bu layihə **25,000-dən çox COVID-19 pasient qeydini** ehtiva edən səhiyyə datası üzərində aparılmış hərtərəfli İlkin Məlumat Analizi (EDA) və kliniki risk qiymətləndirilməsidir. Tədqiqatın əsas məqsədi baza ölüm göstəricilərini təyin etmək, xroniki xəstəliklər üzrə Nisbi Riski (Relative Risk) hesablamaq, yaş qrupları üzrə pnevmoniyanın təsirini qiymətləndirmək və kliniki indikatorlar arasında multikollinearlığı aşkar etməkdir.
 
 ---
 
-## 📌 Əsas İnsaytlar və Xülasə
+##  Əsas İnsaytlar və Xülasə
 
 * **Ümumi Baza Ölüm Faizi:** Dataset üzrə pasientlərin ümumi ölüm göstəricisi **16.2%** təşkil edir.
 * **Əsas Ölüm Tətikləyicisi:** **Pnevmoniya** ölüm göstəricisi ilə ən yüksək xətti korelyasiyaya ($r = 0.47$) malikdir və təkbaşına ölüm riskini **~5.1 dəfə** artırır.
@@ -18,7 +18,7 @@ Bu layihə **25,000-dən çox COVID-19 pasient qeydini** ehtiva edən səhiyyə 
 
 ---
 
-## 📊 Metodologiya və Analitik Çərçivə
+##  Metodologiya və Analitik Çərçivə
 
 1. **Datanın Hazırlanması və İmputasiya:**
    * Ötürülmüş (boş) kliniki dəyərlər kodlaşdırılaraq təhlilə yararlı hala gətirildi.
