@@ -17,19 +17,3 @@ Bu layihə **25,000-dən çox COVID-19 pasient qeydini** ehtiva edən səhiyyə 
   * Lakin tam sağlam gənclərlə (baza ölüm ~0.3%) müqayisədə, pnevmoniyaya yoluxan 19–30 yaşlı şəxslərdə **Nisbi Risk 37.3 dəfə sıçrayır**. Bu da pnevmoniyanın gənc orqanizm üçün kəskin risk yaradan əsas faktor olduğunu göstərir.
 
 ---
-
-##  Metodologiya və Analitik Çərçivə
-
-1. **Datanın Hazırlanması və İmputasiya:**
-   * Ötürülmüş (boş) kliniki dəyərlər kodlaşdırılaraq təhlilə yararlı hala gətirildi.
-   * Şərti ehtimalları riyazi olaraq hesablamaq üçün binar hədəf dəyişəni `IS_DIED` ($1 = \text{Ölüb}, 0 = \text{Sağ qalıb}$) yaradıldı.
-2. **Mütləq və Nisbi Risk Metrikaları:**
-   * **Mütləq Ölüm Faizi** $\mathbb{E}[\text{IS\_DIED} \mid \text{Faktor}]$ düsturu ilə hesablandı.
-   * **Nisbi Risk (RR)** aşağıdakı nisbətlə təyin edildi:
-     $$\text{Nisbi Risk} = \frac{P(\text{Ölüb} \mid \text{Xəstəlik Var})}{P(\text{Ölüb} \mid \text{Xəstəlik Yoxdur})}$$
-3. **Yaş Faktorunun İzolə Edilməsi (Age Control):**
-   * Yaşın xalis təsirini xəstəliyin təsirindən ayırmaq üçün yaş qrupları üzrə kəsişmə matrisi (`pd.crosstab`) tətbiq olundu.
-4. **Korelyasiya və Multikollinearlıq Təhlili:**
-   * Dəyişənlər arası xətti asılılığı görmək və gələcək regressiya modellərində multikollinearlığın qarşısını almaq üçün Korelyasiya Xəritəsi (Heatmap) quruldu.
-
----
